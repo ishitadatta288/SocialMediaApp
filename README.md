@@ -1,69 +1,53 @@
-# React + TypeScript + Vite
+# 🧑‍🤝‍🧑 Social Media App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple full-stack social media app built with a modern frontend stack and powered by [Appwrite](https://appwrite.io) for authentication, database, and backend services. This app allows users to register, log in, and interact with social posts.
 
-Currently, two official plugins are available:
+## 🚀 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live App: [https://social-media-app-vmiu.vercel.app](https://social-media-app-vmiu.vercel.app)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔐 User Authentication (Sign up / Log in / Log out)
+- 📝 Post Creation & Deletion
+- 🗂️ Appwrite Database Integration
+- 📡 Responsive UI with real-time updates
+- ☁️ Hosted on Vercel
+- 🔄 CORS-configured for local and live environments
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧰 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Frontend:**
+- React / Next.js / Vite (update this depending on what you're using)
+- Tailwind CSS or other CSS framework
+- Appwrite JavaScript SDK
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Backend:**
+- Appwrite (Authentication, Database, Storage, etc.)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Deployment:**
+- Vercel
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📁 Project Structure
+
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/        # Appwrite SDK logic
+│   └── utils/
+├── public/
+├── .env
+├── package.json
+└── README.md
+
+📦 Deploying to Vercel
+
+Push your code to GitHub
+Connect the repo to Vercel
+Add environment variables in the Vercel Dashboard
+Deploy 🚀
+
+📄 License
+MIT License
