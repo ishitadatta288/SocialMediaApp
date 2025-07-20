@@ -30,24 +30,7 @@ Live App: [https://social-media-app-vmiu.vercel.app](https://social-media-app-vm
 **Deployment:**
 - Vercel
 
-📁 Project Structure
 
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/        # Appwrite SDK logic
-│   └── utils/
-├── public/
-├── .env
-├── package.json
-└── README.md
-
-📦 Deploying to Vercel
-
-Push your code to GitHub
-Connect the repo to Vercel
-Add environment variables in the Vercel Dashboard
-Deploy 🚀
 
 📄 License
 MIT License
